@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FFFFFF;
+    color: #0F172A;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Primary Brand Accent (White + rgb(254,248,76)) */
+.bg-broski-yellow {
+  background-color: rgb(254, 248, 76);
+}
+
+.text-broski-yellow {
+  color: rgb(254, 248, 76);
+}
+
+.border-broski-yellow {
+  border-color: rgb(254, 248, 76);
+}
+
+.btn-broski-primary {
+  background-color: rgb(254, 248, 76);
+  color: #0F172A;
+  font-weight: 700;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(254, 248, 76, 0.4);
+}
+
+.btn-broski-primary:hover {
+  background-color: #f7f13b;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(254, 248, 76, 0.5);
+}
+
+.btn-broski-primary:active {
+  transform: translateY(0);
+}
+
+/* Social & Messaging UI Utilities */
+.social-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  border-radius: 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.social-card:hover {
+  border-color: #CBD5E1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Message Bubbles (Req 6) */
+.chat-bubble-student {
+  background: rgb(254, 248, 76);
+  color: #0F172A;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.chat-bubble-mentor {
+  background: #FFFFFF;
+  color: #0F172A;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+/* Composer Yellow Glow on Focus (Req 7) */
+.input-yellow-focus:focus {
+  outline: none;
+  border-color: #0F172A;
+  box-shadow: 0 0 0 4px rgba(254, 248, 76, 0.5);
+}
+
+/* Domain Ambient Background Patterns (Req 6) */
+.pattern-aarya {
+  background-image: radial-gradient(rgba(37, 99, 235, 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.pattern-alex {
+  background-image: linear-gradient(rgba(16, 185, 129, 0.06) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(16, 185, 129, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.pattern-lucy {
+  background-image: radial-gradient(rgba(79, 70, 229, 0.07) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Soft Ambient Living Background Blobs */
+@keyframes ambientBlob {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  50% { transform: translate(30px, -20px) scale(1.08); }
+}
+
+.animate-ambient-blob {
+  animation: ambientBlob 18s infinite ease-in-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E2E8F0;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #CBD5E1;
+}

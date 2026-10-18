@@ -1,0 +1,19 @@
+{
+  "short_name": "Mentor Broski",
+  "name": "Mentor Broski — Your AI Career Mentor",
+  "description": "Your AI mentor for the career you're building. Continuous AI mentorship in AI/ML, Cybersecurity, and Data Science.",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FEF84C",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "categories": ["education", "career", "productivity"]
+}
